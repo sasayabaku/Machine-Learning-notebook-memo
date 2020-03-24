@@ -6,7 +6,7 @@ async-generator==1.10
 attrs==19.1.0
 backcall==0.1.0
 beautifulsoup4==4.7.1
-bleach==3.1.0
+bleach==3.1.2
 bokeh==1.0.4
 certifi==2019.3.9
 cffi==1.12.3
