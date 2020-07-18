@@ -1,0 +1,7 @@
+FROM tensorflow/tensorflow:2.2.0rc3-gpu-jupyter
+
+COPY resolv.conf /etc/resolv.conf
+COPY requirements-gpu.txt /requirements.txt
+
+RUN pip install -r /requirements.txt
+RUN jupyter notebook &
