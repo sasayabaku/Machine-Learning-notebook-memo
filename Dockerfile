@@ -27,3 +27,13 @@ RUN pip install -r /requirements.txt
 
 RUN pip3 install torch==1.10.0+cpu torchvision==0.11.1+cpu torchaudio==0.10.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
 
+# Notosans for Matplotlib
+WORKDIR /home/jovyan
+RUN mkdir .fonts
+RUN wget https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip
+RUN unzip NotoSansCJKjp-hinted.zip -d .fonts/NotoSansCJKjp
+RUN chmod 755 -R /home/jovyan/.fonts/NotoSansCJKjp
+RUN rm NotoSansCJKjp-hinted.zip
+RUN fc-cache -fv
+RUN rm -rf /home/jovyan/.cache/matplotlib/*
+USER jovyan
