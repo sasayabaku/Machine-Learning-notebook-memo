@@ -7,3 +7,6 @@
 <a href="https://colab.research.google.com/drive/11iqbW1U49Y80uTOICe1o8wGpCNCnKlKf?usp=sharing" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Colab-Notebook-blueviolet?logo=googlecolab" />
 </a>
+
+https://user-images.githubusercontent.com/23444039/227772798-277ae1b4-3c77-4301-85c9-b1b5ad54f9ca.mp4
+
